@@ -21,9 +21,30 @@ gcc: fatal error: no input files
 compilation terminated.
 ```
 
-`F:\LangageC\Test_1>gcc -o test.exe main.c`
+Commande de compilation : 
 
 ```
-- main.c
-- test.exe
+gcc -o <nom_du_fichier_exécutable>.exe <nom_du_fichier_principal_du_projet>.c
+```
+
+```
+F:\LangageC\Test_1>gcc -o test.exe main.c
+```
+
+Résultat
+```
+.
+├── main.c
+├── test.exe
+```
+
+Temp
+```
+├── img
+│   └── langage_c
+│       ├── 001.png
+│       ├── 002.png
+│       ├── 003.png
+│       └── 004.png
+└── langage_c.md
 ```
