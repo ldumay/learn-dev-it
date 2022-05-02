@@ -4,23 +4,54 @@
 
 ## Sommaire
 
-- [1 - Les pré-requis - Compilateur GCC](#1---les-pr%C3%A9-requis---compilateur-gcc)
-  - [1.1 - Vérifier et installer GCC sur Windows](#11---v%C3%A9rifier-et-installer-gcc-sur-windows)
-    - [1.1.1 - Vérifier GCC](#111---v%C3%A9rifier-gcc)
-    - [1.1.2 - Installer GCC via MinGW](#112---installer-gcc-via-mingw)
-- [Programmer en langage C](#2---programmer-en-langage-c)
-  - 2.1 - Les variables
-  - 2.2 - Les opérations
-  - 2.3 - Les conditions
-  - 2.4 - Les fonctions
-  - 2.5 - Les librairies
-  - 2.6 - Les pointeurs
-  - 2.7 - Les tableaux
-  - 2.8 - Les chaîne de caractères
-  - 2.9 - Définir une valeur à un mot
-  - 2.10 - Les macros
-  - 2.11 - Les conditions en langage préprocesseur
-  - 2.12 - Evitez les inclusions infinies
+- [Le langage C](#le-langage-c)
+  - [Sommaire](#sommaire)
+  - [1 - Les pré-requis - Compilateur **GCC**](#1---les-pré-requis---compilateur-gcc)
+    - [1.1 - Vérifier et installer GCC sur Windows](#11---vérifier-et-installer-gcc-sur-windows)
+      - [1.1.1 - Vérifier GCC](#111---vérifier-gcc)
+        - [Si GCC est installé](#si-gcc-est-installé)
+        - [Si GCC n'est pas installé](#si-gcc-nest-pas-installé)
+      - [1.1.2 - Installer GCC via MinGW](#112---installer-gcc-via-mingw)
+        - [1.1.3 - Liaison de GCC à la console](#113---liaison-de-gcc-à-la-console)
+    - [1.2 - Compilation de programme](#12---compilation-de-programme)
+  - [2 - Programmer en langage C](#2---programmer-en-langage-c)
+    - [2.1 - Les variables et possibilités :](#21---les-variables-et-possibilités-)
+      - [Les entiers :](#les-entiers-)
+      - [Les nombres décimaux :](#les-nombres-décimaux-)
+      - [Les entiers non signés :](#les-entiers-non-signés-)
+      - [Pour faire des variables constantes :](#pour-faire-des-variables-constantes-)
+      - [Pour afficher le contenu d'une variable :](#pour-afficher-le-contenu-dune-variable-)
+      - [Pour afficher une variable selon son type :](#pour-afficher-une-variable-selon-son-type-)
+      - [Saisir de donnée dans la console :](#saisir-de-donnée-dans-la-console-)
+    - [2.2 - Les opérations de variables et concaténation :](#22---les-opérations-de-variables-et-concaténation-)
+      - [Les opérations de variables](#les-opérations-de-variables)
+      - [La concaténation](#la-concaténation)
+    - [2.3 - les conditions](#23---les-conditions)
+      - [Symboles conditionnels](#symboles-conditionnels)
+      - [Multiplicateurs de conditions](#multiplicateurs-de-conditions)
+      - [IF / IF ELSE / ELSE (SI / SINON SI / SINON)](#if--if-else--else-si--sinon-si--sinon)
+      - [SWITCH](#switch)
+      - [WHILE](#while)
+      - [DO ... WHILE](#do--while)
+      - [FOR](#for)
+    - [2.4 - les fonctions](#24---les-fonctions)
+    - [2.5 - les librairies](#25---les-librairies)
+      - [Pour importer une librairie :](#pour-importer-une-librairie-)
+      - [Pour importer un fichier :](#pour-importer-un-fichier-)
+      - [Quelques librairies pour commencer :](#quelques-librairies-pour-commencer-)
+    - [2.6 - Les pointeurs](#26---les-pointeurs)
+    - [2.7 - Les tableaux](#27---les-tableaux)
+    - [2.8 - Les chaîne de caractères](#28---les-chaîne-de-caractères)
+      - [a - Les cractères](#a---les-cractères)
+      - [b - Pour stocker une chaîne de caractère](#b---pour-stocker-une-chaîne-de-caractère)
+        - [=> Méthode 1](#-méthode-1)
+        - [=> Méthode 2](#-méthode-2)
+        - [=>  Pour afficher une chaîne de cractères](#--pour-afficher-une-chaîne-de-cractères)
+      - [Import de la bibliothèque de calculs des chaînes](#import-de-la-bibliothèque-de-calculs-des-chaînes)
+    - [2.9 - Définir une valeur à un mot](#29---définir-une-valeur-à-un-mot)
+    - [2.10 - Les macros](#210---les-macros)
+    - [2.11 - Les conditions en langage préprocesseur](#211---les-conditions-en-langage-préprocesseur)
+    - [2.12 - Evitez les inclusions infinies](#212---evitez-les-inclusions-infinies)
 
 ## 1 - Les pré-requis - Compilateur **GCC**
 
@@ -115,7 +146,7 @@ compilation terminated.
 
 Votre compilateur est maintenant prêt.
 
-### 2 - Compilation de programme
+### 1.2 - Compilation de programme
 
 Afin de compiler un programme **C** :
 
