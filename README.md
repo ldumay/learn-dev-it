@@ -53,4 +53,4 @@ Voici un ordre d'apprentissage que je recommande pour obtenir de bonne bases et 
 ## Mementos et Codes de démos
 
 - [Mementos](mementos/)
-- [Demos](demos/)
+- [Démos de code d'application](demos/)
