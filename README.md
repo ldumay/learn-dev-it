@@ -9,7 +9,7 @@ ENG : Learning about the development of computer technologies
 
 Ce dépôt à pour but de stocké l'essentiel minimal pour l'apprentissage des bases d'un langage, comme un mini memento 😉.
 
-## Langages de développement informatique :
+## Langages de développement informatique
 
 - **Programmation**
   - [Le pseudo code](#) - ❌(à venir)
@@ -49,3 +49,8 @@ Voici un ordre d'apprentissage que je recommande pour obtenir de bonne bases et 
 5. **Le Java ou langage C++** (les deux sont possibles) - Permettant d'apprendre les bases de la programmation orientée objet (PPO).
 
 > **Attention** : Il n'est pas nécesaire de maitriser toute la compléxité des langages mais bien la logique de la programmation.
+
+## Mementos et Codes de démos
+
+- [Mementos](mementos/)
+- [Demos](demos/)
