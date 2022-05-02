@@ -40,18 +40,11 @@
       - [Pour importer un fichier :](#pour-importer-un-fichier-)
       - [Quelques librairies pour commencer :](#quelques-librairies-pour-commencer-)
     - [2.6 - Les pointeurs](#26---les-pointeurs)
+      - [Afficher l'adresse mémoire d'une variable :](#afficher-ladresse-mémoire-dune-variable-)
+      - [Céer un pointeur](#céer-un-pointeur)
+      - [Afficher l'adresse et la valeur d'un pointeur](#afficher-ladresse-et-la-valeur-dun-pointeur)
     - [2.7 - Les tableaux](#27---les-tableaux)
-    - [2.8 - Les chaîne de caractères](#28---les-chaîne-de-caractères)
-      - [a - Les cractères](#a---les-cractères)
-      - [b - Pour stocker une chaîne de caractère](#b---pour-stocker-une-chaîne-de-caractère)
-        - [=> Méthode 1](#-méthode-1)
-        - [=> Méthode 2](#-méthode-2)
-        - [=>  Pour afficher une chaîne de cractères](#--pour-afficher-une-chaîne-de-cractères)
-      - [Import de la bibliothèque de calculs des chaînes](#import-de-la-bibliothèque-de-calculs-des-chaînes)
-    - [2.9 - Définir une valeur à un mot](#29---définir-une-valeur-à-un-mot)
-    - [2.10 - Les macros](#210---les-macros)
-    - [2.11 - Les conditions en langage préprocesseur](#211---les-conditions-en-langage-préprocesseur)
-    - [2.12 - Evitez les inclusions infinies](#212---evitez-les-inclusions-infinies)
+    - [2.7.1 - Les tableaux simple](#271---les-tableaux-simple)
 
 ## 1 - Les pré-requis - Compilateur **GCC**
 
@@ -429,20 +422,73 @@ Voici donc la méthode permettenant d'importer une librairie, ci-dessous :
 
 ### 2.6 - Les pointeurs
 
-**[à venir]**
+Pour chaque variable, une adresse mémoire est attribuée à cele-ci.
+
+Pour une variable `int age = 10` :
+
+- `age` désigne la valeur de la variable, qui affichera `10`.
+- `&age` désigne l'adresse de la variable, qui affichera `0x0023FF74` (valeur variable).
+
+#### Afficher l'adresse mémoire d'une variable :
+
+Pour notre variable `age` ci-dessus. Voici la méthode permettant de l'afficher :
+
+```
+printf("Adresse de la variable age : %p", &age);
+```
+
+Résultat possible : `Adresse d'un age : 0x0023FF74`
+
+#### Céer un pointeur
+
+Un pointeur est uniquement fait pour retenir l'adresse mémoire d'une autre variable. 
+Pour le créer, il suffir d'effectuer :
+
+```
+<meme_type_variable_cible> * <nom_variable_pointeur> = <adresse_autre_variable>
+```
+
+Exemple :
+
+```
+int * pointeurSurAge = &age;
+```
+
+#### Afficher l'adresse et la valeur d'un pointeur
+
+```
+printf("Adresse du pointeur : %p", pointeurSurAge);
+printf("Valeur contenue dans le pointeur : %d", *pointeurSurAge);
+```
+
+Si cela n'est pas assez clair, voici un lien d'explication plus de détail : [lien](https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/7672176-creez-et-initialisez-des-pointeurs).
 
 ### 2.7 - Les tableaux
 
-```
-int tableau[4]; //possède toujours une taille
+### 2.7.1 - Les tableaux simple
 
-tableau[0] = 10;
+Dans le langage C, il est posible de créer des tableaux de valeurs.
+Voici la méthode pour créer un tableau :
+
+```
+int tableau[4]; //possède toujours une taille, qui ici est 4.
+```
+
+Voici ce que l'on peut comprendre :
+
+| --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 |
+| --- | --- | --- | --- |
+Pour mo
+tableau[0] = 10; //on affecte la 
 tableau[1] = 23;
 tableau[2] = 505;
 tableau[3] = 8;
 
 printf("%d", tableau[0]);
 ```
+
+### 2.7.2 - Les tableaux à deux dimensions
 
 ### 2.8 - Les chaîne de caractères
 
