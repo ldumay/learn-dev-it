@@ -2,7 +2,27 @@
 
 [<== Retour ](../../)
 
-## 1 - Les pré-requis - compilateur **GCC**
+## Sommaire
+
+- [1 - Les pré-requis - Compilateur GCC](#1---les-pr%C3%A9-requis---compilateur-gcc)
+  - [1.1 - Vérifier et installer GCC sur Windows](#11---v%C3%A9rifier-et-installer-gcc-sur-windows)
+    - [1.1.1 - Vérifier GCC](#111---v%C3%A9rifier-gcc)
+    - [1.1.2 - Installer GCC via MinGW](#112---installer-gcc-via-mingw)
+- [Programmer en langage C](#2---programmer-en-langage-c)
+  - 2.1 - Les variables
+  - 2.2 - Les opérations
+  - 2.3 - Les conditions
+  - 2.4 - Les fonctions
+  - 2.5 - Les librairies
+  - 2.6 - Les pointeurs
+  - 2.7 - Les tableaux
+  - 2.8 - Les chaîne de caractères
+  - 2.9 - Définir une valeur à un mot
+  - 2.10 - Les macros
+  - 2.11 - Les conditions en langage préprocesseur
+  - 2.12 - Evitez les inclusions infinies
+
+## 1 - Les pré-requis - Compilateur **GCC**
 
 Pour pouvoir créer une programme un langage **C**, vous allez avoir besoin d'un compilateur afin de créer le ficier exécutable.
 
