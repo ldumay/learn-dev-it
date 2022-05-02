@@ -374,7 +374,7 @@ Voici donc la méthode permettenant d'importer une librairie, ci-dessous :
 
 #### Quelques librairies pour commencer :
 
-[Disponibles ici](../../langage_c_librairies.md)
+[Disponibles ici](/langage_c_librairies.md)
 
 ### 2.6 - Les pointeurs
 
