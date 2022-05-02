@@ -1,6 +1,6 @@
 # La langage C
 
-[<== Retour](../../langage_c.md)
+[<== Retour](../langage_c.md)
 
 ## Les librairies
 
