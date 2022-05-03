@@ -569,7 +569,16 @@ Voici une repésentation du tableau ci-desous :
 Contenu du dossier :
 
 ```
-tree
+.
+└── langage_c
+    ├── 01_hello_world.c
+    ├── 02_essai.c
+    ├── 03_tableau_a_1_dimensions_affichage_matrice.c
+    ├── 04_tableau_a_1_dimensions.c
+    ├── 05_tableau_a_2_dimensions_affichage_matrice.c
+    ├── 06_tableau_a_2_dimensions.c
+    ├── 07_tableau_a_3_dimensions_affichage_matrice.c
+    └── 08_tableau_a_3_dimensions.c
 ```
 
 [Disponibles ici](/demos/langage_c/)
