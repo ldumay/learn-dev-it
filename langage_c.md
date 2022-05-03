@@ -169,10 +169,18 @@ Afin de compiler un programme **C** :
 gcc -o <nom_du_fichier_exécutable>.exe <nom_du_fichier_principal_du_projet>.c
 ```
 
-Exemple d'essai avec un projet de démo :
+#### Exemple d'essai avec un projet de démo :
+
+##### Sur Windows
 
 ```
 F:\LangageC\Test_1>gcc -o test.exe main.c
+```
+
+##### Sur MacOS
+
+```
+gcc main.c -o test && ./test
 ```
 
 Résultat
