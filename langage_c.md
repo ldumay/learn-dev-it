@@ -45,6 +45,24 @@
       - [Afficher l'adresse et la valeur d'un pointeur](#afficher-ladresse-et-la-valeur-dun-pointeur)
     - [2.7 - Les tableaux](#27---les-tableaux)
     - [2.7.1 - Les tableaux simple](#271---les-tableaux-simple)
+      - [Pour initialiser les valeurs d'un tableau :](#pour-initialiser-les-valeurs-dun-tableau-)
+      - [Pour modifier les valeurs d'un tableau :](#pour-modifier-les-valeurs-dun-tableau-)
+      - [Pour afficher la valeur d'un tableau selon une position précise :](#pour-afficher-la-valeur-dun-tableau-selon-une-position-précise-)
+    - [2.7.2 - Les tableaux à dimentions multiples.](#272---les-tableaux-à-dimentions-multiples)
+      - [Exemple d'un tableau à 2 dimension :](#exemple-dun-tableau-à-2-dimension-)
+      - [Exemple d'un tableau à 3 dimension :](#exemple-dun-tableau-à-3-dimension-)
+      - [Exemples de codes de tableaux à dimensions multiples :](#exemples-de-codes-de-tableaux-à-dimensions-multiples-)
+    - [2.8 - Les chaîne de caractères](#28---les-chaîne-de-caractères)
+      - [a - Les cractères](#a---les-cractères)
+      - [b - Pour stocker une chaîne de caractère](#b---pour-stocker-une-chaîne-de-caractère)
+        - [=> Méthode 1](#-méthode-1)
+        - [=> Méthode 2](#-méthode-2)
+        - [=>  Pour afficher une chaîne de cractères](#--pour-afficher-une-chaîne-de-cractères)
+      - [Import de la bibliothèque de calculs des chaînes](#import-de-la-bibliothèque-de-calculs-des-chaînes)
+    - [2.9 - Définir une valeur à un mot](#29---définir-une-valeur-à-un-mot)
+    - [2.10 - Les macros](#210---les-macros)
+    - [2.11 - Les conditions en langage préprocesseur](#211---les-conditions-en-langage-préprocesseur)
+    - [2.12 - Evitez les inclusions infinies](#212---evitez-les-inclusions-infinies)
 
 ## 1 - Les pré-requis - Compilateur **GCC**
 
@@ -471,24 +489,90 @@ Dans le langage C, il est posible de créer des tableaux de valeurs.
 Voici la méthode pour créer un tableau :
 
 ```
-int tableau[4]; //possède toujours une taille, qui ici est 4.
+int tableau[x];
 ```
 
-Voici ce que l'on peut comprendre :
+> **NB** : Un tableau possède toujours une taille, qui ici est définit par un nombre entier **x**.
 
-| --- | --- | --- | --- |
+Voici une repésentation du tableau ci-desous :
+
 | 0 | 1 | 2 | 3 |
 | --- | --- | --- | --- |
-Pour mo
-tableau[0] = 10; //on affecte la 
+
+#### Pour initialiser les valeurs d'un tableau :
+
+```
+int tableau[3] = {0, 1, 2, 3};
+```
+
+On affecte les valeurs **0, 1, 2, 3** qui prendront automatiquement la position x pour **0, 1, 2** et **3**.
+
+#### Pour modifier les valeurs d'un tableau :
+
+```
+tableau[0] = 10;
 tableau[1] = 23;
 tableau[2] = 505;
 tableau[3] = 8;
+```
 
+On affecte la valeur **10** à la position **0**. Puis, on affecte la valeur **10** à la position **0**. Et ainsi ... de suite ...
+> **Attention** : Quelque soit la taille **x**, la position commencera toujours à 0.
+
+#### Pour afficher la valeur d'un tableau selon une position précise :
+
+```
 printf("%d", tableau[0]);
 ```
 
-### 2.7.2 - Les tableaux à deux dimensions
+### 2.7.2 - Les tableaux à dimentions multiples.
+
+Il est aussi possible de créer des tableaux à 2 et 3 dimensions, tel que :
+Voici la méthode pour créer un tableau à 2 et 3 dimensions :
+
+- un tableau à 2 dimensions : `int tableau = [x][y];`
+- un tableau à 3 dimensions : `int tableau = [x][y][z];`
+
+#### Exemple d'un tableau à 2 dimension :
+
+```
+int tableau[2][4] = { { 0, 1, 2, 3 } , { 4, 5, 6, 7} }
+```
+Ce tableau aura donc 2 lignes et 5 colonnes.
+Voici une repésentation du tableau ci-desous :
+
+| 0 | 1 | 2 | 3 |
+| --- | --- | --- | --- |
+| 4 | 5 | 6 | 7 |
+
+Pour accéder à une valeur d'un tableau à 2 dimensions, il suffit de faire :
+- `int x = tableau[0][2]` pour aller chercher la valeur **2**
+- `int x = tableau[1][3]` pour aller chercher la valeur **7**
+
+#### Exemple d'un tableau à 3 dimension :
+
+```
+int tableau[2][2][2] = {
+  { {1, 2} , {3, 4} },
+  { {4, 5} , {7, 8} }
+}
+```
+Ce tableau aura donc 2 lignes, 2 colonnes et 2 valeurs par 'cellules'.
+Voici une repésentation du tableau ci-desous :
+
+| {1, 2} | {3, 4} |
+| --- | --- |
+| {5, 6} | {7, 8} ||
+
+#### Exemples de codes de tableaux à dimensions multiples :
+
+Contenu du dossier :
+
+```
+tree
+```
+
+[Disponibles ici](/demos/langage_c/)
 
 ### 2.8 - Les chaîne de caractères
 
