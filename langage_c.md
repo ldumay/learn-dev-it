@@ -539,6 +539,7 @@ Voici la méthode pour créer un tableau à 2 et 3 dimensions :
 int tableau[2][4] = { { 0, 1, 2, 3 } , { 4, 5, 6, 7} }
 ```
 Ce tableau aura donc 2 lignes et 5 colonnes.
+
 Voici une repésentation du tableau ci-desous :
 
 | 0 | 1 | 2 | 3 |
@@ -558,6 +559,7 @@ int tableau[2][2][2] = {
 }
 ```
 Ce tableau aura donc 2 lignes, 2 colonnes et 2 valeurs par 'cellules'.
+
 Voici une repésentation du tableau ci-desous :
 
 | {1, 2} | {3, 4} |
